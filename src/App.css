@@ -1,38 +1,144 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #dddddd75 !important;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a, a:link{text-decoration: none;}
+a:hover{
+  text-decoration: underline;
+ 
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.bg-white{
+  background-color: #fff !important;
+}
+h3,h4,h5,h6,h1,h2,a,span,p{
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.post_header {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.avatar img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 55%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.post_title {
+  margin-left: 8px;
+}
+.post_title h3 a {
+  color: #3b5998;
+  font-size: 22px;
+  font-weight: 700;
+}
+.post_desc {
+  margin-top: 18px;
+  margin-bottom: 15px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.post_desc p{
+  font-size: 16.5px;
+}
+.actions_section {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 10px;
+}
+.actions_section a {
+  font-size: 16px;
+  color: #65676b;
+}
+.actions_section a svg {
+  width: 20px;
+}
+svg.svg-inline--fa.fa-thumbs-up.fa-w-16 {
+  width: 20px;
+}
+.btn-default {
+  background: #fff !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  padding: 8px 22px !important;
+  font-size: 14px !important;
+ 
+  /* align-items: center !important; */
+}
+.btn-default:hover{
+  background-color: rgba(0, 0, 0, 0.082) !important;
+}
+.btn-default span{
+  margin-left: 4px !important;
+}
+.action_section_2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+svg.svg-inline--fa.fa-comment-alt.fa-w-16 {
+  width: 20px;
+}
+svg.svg-inline--fa.fa-share.fa-w-16 {
+  width: 20px;
+}
+.btn-secondary {
+  background-color: #fff !important;
+  color: #000 !important;
+  border: 0 !important;
+  font-size: 15px !important;
+}
+.btn-secondary img{
+  width: 25px;
+  height: 25px;
+  border-radius: 55px;
+}
+.btn-secondary:hover{
+  background-color: rgba(0, 0, 0, 0.082) !important;
+}
+.reactions{
+  width: 35px;
+  margin-right: 0.7rem;
+}
+.reactions_2{
+  width: 22px;
+  height: 22px;
+}
+.set_reactions {
+  position: absolute;
+  left: -25px;
+  top: -40px;
+  background: #fff;
+  padding-left: 30px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s all ease;
+}
+#react{
+  position: relative;
+}
+#react:hover .set_reactions{
+  opacity: 1;
+  visibility: visible;
+}
+span.likes {
+  display: flex;
+  align-items: center;
+}
+span.likes h5 {
+  padding-left: 7px !important;
+}
+span.likes h5 a{
+  color: #65676b;
+  font-weight: 400 !important;
+}
+.comments a:hover, .shares a:hover{
+  color: #65676b !important;
+}
+small.spons__label {
+  font-size: 13px;
 }
